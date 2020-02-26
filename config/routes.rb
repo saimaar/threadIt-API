@@ -12,5 +12,6 @@ Rails.application.routes.draw do
 post '/login', to: "users#login"
 get '/persist', to: "users#persist"
 get '/profile', to: "users#profile"
+delete '/cartitem/delete/:id', to: 'cart_items#destroy'
 
 end

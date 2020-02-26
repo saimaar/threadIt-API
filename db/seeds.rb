@@ -24,6 +24,7 @@ order1 = Order.create( user: saima, address: "magic garden")
 order2 = Order.create( user: annie, address: "kitty garden")
 
 tunic = Category.create(name: "tunic")
+dress = Category.create(name: "dress")
 
 item1 = Item.create(
   name: "KAELI DRESS",
@@ -46,6 +47,28 @@ item2 = Item.create(
  price: 100,
  category: tunic
   )
+
+item1 = Item.create(
+  name: "ZOYA DRESS",
+  color: "Ivory",
+  gender: "female",
+  size:["S", "M", "L", "XL"],
+  description: "The Zoya Dress is an understated stone hued dress with tassel detailing at the rounded neckline",
+  image:"https://us.anitadongre.com/media/catalog/product/cache/9068914f3af5c89421a71a6fdd0cb779/s/s/ss19mb010-stone--_2_.jpg?v=4",
+  price: 123,
+  category: dress
+ )
+
+item2 = Item.create(
+  name: "NORA DRESS",
+  color: "Indigo",
+  gender: "female",
+  size:["S", "M", "L", "XL"],
+  description: "The silken Nora Dress is adorned with motifs inspired by the majestic architecture of Rajasthan’s palaces",
+  image:"https://us.anitadongre.com/media/catalog/product/cache/9068914f3af5c89421a71a6fdd0cb779/f/w/fw19pds113_indigo.jpg?v=4",
+  price: 100,
+  category: dress
+)
 
 cartItem1 = CartItem.create(cart: cart1, item: item1)
 orderItem1 = OrderItem.create(order: order1, item: item1)
