@@ -1,6 +1,6 @@
 class UserSerializer < ActiveModel::Serializer
   attributes :id, :username, :email, :orders, :cart_items
-  # has_one :cart
+  has_one :cart
 
   def cart_items
     # byebug

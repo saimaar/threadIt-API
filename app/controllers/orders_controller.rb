@@ -1,18 +1,34 @@
 class OrdersController < ApplicationController
 
+  def index
+
+    @orders = Order.all
+    render json: @orders
+  end
+
   def create
+    # debugger
     ## Items
-    items = logged_user.cart.items
+    user = User.find(params[:order][:user_id])
+    items = user.cart.items
     ## Create Order
-    order = Order.create(user_id: logged_user.id);
+    @order = Order.create(user_id: user.id);
     ## Associate the Items with the Order
     items.each do |item|
-        OrderItem.create(order_id: order.id, item_id: item.id)
+        OrderItem.create(order_id: @order.id, item_id: item.id)
     end
     ## Clear the cart
-    logged_user.cart_items.destroy_all
+    ## logged_user.cart_items.destroy_all
+    render json: @order
 end
 
 
 
 end
+
+## here on line 7, we could hacve done logged_in.cart.items only
+## if we sent Authorization bearer token in the headers of the post request
+##from the frontend
+#when you hit "proceed to checkout button" , fetch to orders and send address and user_id in the body
+#this will create orders along with order-Items / take them to order page implement
+#in the fornt end , remove cart_items from the cart

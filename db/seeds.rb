@@ -20,9 +20,6 @@ annie = User.create(username: "annie", email: "annie_iscool@hotmail.com", passwo
 cart1 = Cart.create(user: saima)
 cart2 = Cart.create(user: annie)
 
-order1 = Order.create( user: saima, address: "magic garden")
-order2 = Order.create( user: annie, address: "kitty garden")
-
 tunic = Category.create(name: "tunic")
 dress = Category.create(name: "dress")
 
@@ -71,7 +68,7 @@ item2 = Item.create(
 )
 
 cartItem1 = CartItem.create(cart: cart1, item: item1)
-orderItem1 = OrderItem.create(order: order1, item: item1)
+
 
 
 
