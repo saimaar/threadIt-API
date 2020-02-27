@@ -15,7 +15,4 @@ class ItemSerializer < ActiveModel::Serializer
      return JSON.parse(size)
   end
 
-
-
-
 end
