@@ -7,6 +7,7 @@ class OrdersController < ApplicationController
   end
 
   def create
+    # byebug
     # debugger
     ## Items
     user = User.find(params[:order][:user_id])

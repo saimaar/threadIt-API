@@ -1,6 +1,6 @@
 class OrderSerializer < ActiveModel::Serializer
   attributes :id, :address, :order_items, :created_at
-  # has_many :items, through: :order_items
+  has_many :items, through: :order_items
   has_many :order_items
 
 
