@@ -1,9 +1,17 @@
 class OrderSerializer < ActiveModel::Serializer
-  attributes :id, :order_items, :orders
-  has_many :items
+  attributes :id, :address, :order_items, :created_at
+  # has_many :items, through: :order_items
+  has_many :order_items
 
-  def orders
-# byebug
-    self.object
+
+  def order_items
+    self.object.order_items.map do |order_item|
+      order_item.item
+    end
   end
+
+#   def orders
+# # byebug
+#     self.object
+#   end
 end

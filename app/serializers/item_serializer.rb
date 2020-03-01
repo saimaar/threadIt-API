@@ -1,5 +1,7 @@
 class ItemSerializer < ActiveModel::Serializer
-  attributes :id, :name, :color, :gender, :size, :description, :image, :price, :category_id, :category_name
+  attributes :id, :name, :color, :gender, :size,
+  :description, :image, :price, :category_id,
+  :category_name, :designer
   # belongs_to :order_item cannot do this
 ## inorder to hit the byebug here, you must call the method name in the attribute above!
   def category_name

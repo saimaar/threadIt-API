@@ -17,6 +17,7 @@ class Item < ApplicationRecord
     :description => self.description,
     :image => self.image,
     :price => self.price,
+    :designer => self.designer,
     :category_id => self.category_id,
     :category_name => self.category.name}
   end

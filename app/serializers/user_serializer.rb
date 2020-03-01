@@ -1,6 +1,7 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :username, :email, :cart_items, :order_items
+  attributes :id, :username, :email, :cart_items
   has_one :cart
+  has_many :orders
 
   def cart_items
     # byebug
@@ -9,11 +10,11 @@ class UserSerializer < ActiveModel::Serializer
     end
   end
 
-  def order_items
-    self.object.orders.map do |order|
-      order.items
-    end
-  end
+  # def order_items
+  #   self.object.orders.map do |order|
+  #     order.items
+  #   end
+  # end
 end
 
 
