@@ -72,3 +72,4 @@ item2 = Item.create(
 )
 
 cartItem1 = CartItem.create(cart: cart1, item: item1)
+review1 = Review.create(item: item1, user: saima, comment: "love this dress", rating: 3)
