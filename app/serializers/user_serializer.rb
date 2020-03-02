@@ -4,6 +4,9 @@ class UserSerializer < ActiveModel::Serializer
   has_many :orders
   has_many :reviews
 
+  ##instead of line 4 and 5 we could just add orders and reviews as an attribute
+  ##on line 2 
+
   def cart_items
     # byebug
       self.object.cart.cart_items.map do |cart_item|
