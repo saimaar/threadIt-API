@@ -25,6 +25,7 @@ dress = Category.create(name: "dress")
 jumpsuit = Category.create(name: "jumpsuit")
 bottom = Category.create(name: "bottom")
 top = Category.create(name: "top")
+wedding = Category.create(name: "wedding")
 
 
 item1 = Item.create(
@@ -140,7 +141,7 @@ item9 = Item.create(
   designer: "Global Desi"
 )
 
-item7 = Item.create(
+item10 = Item.create(
   name: "Blue Gharara Jumpsuit",
   color: "blue",
   gender: "female",
@@ -152,6 +153,98 @@ item7 = Item.create(
   designer: "Global Desi"
    )
 
+
+
+item11 = Item.create(
+ name: "ARETHA LEHENGA",
+ color: "yellow",
+ gender: "female",
+ size:["S", "M", "L", "XL"],
+ description: "A beautifully fluid lehenga with rich gold details captures the celebratory spirit with vivid colours. It comes co-ordinated with a dressy choli and a dupatta.",
+ image:"http://lookbook.anitadongre.com/Summer-2020/images/ss21.jpg",
+ price: 1000,
+ category: wedding,
+ designer: "Anita Dongre"
+  )
+
+
+item12 = Item.create(
+ name: "AMARI LEHENGA",
+ color: "pink",
+ gender: "female",
+ size:["S", "M", "L", "XL"],
+ description: "This striking pastel-hued lehenga, with metallic gold thread work that glints as it catches light, is all about soft glamour. A matching choli and a dupatta completes the look.",
+ image:"http://lookbook.anitadongre.com/Summer-2020/images/ss23.jpg",
+ price: 2000,
+ category: wedding,
+ designer: "Anita Dongre"
+  )
+
+
+  item12 = Item.create(
+   name: "Anarkali In Tulle",
+   color: "pink",
+   gender: "female",
+   size:["S", "M", "L", "XL"],
+   description: "Anarkali In Tulle Featuring Resham Embroidered Panels With An Under Layer Of A Floral Printed Chanderi Lining. Paired With An Embroidered Ombré Dupatta In Tulle And A Churidar.",
+   image:"https://cdn.shopify.com/s/files/1/2392/5893/products/TT-DAY-10335_400x.jpg",
+   price: 4000,
+   category: wedding,
+   designer: "Anita Dongre"
+    )
+
+
+  item13 = Item.create(
+   name: "Anarkali With A Trail",
+   color: "pink",
+   gender: "female",
+   size:["S", "M", "L", "XL"],
+   description: "Anarkali With A Trail In Tulle Featuring Velvet Appliqué Work And Pearl Embroidery. Paired With A Tulle Dupatta And Churidar.",
+   image:"https://cdn.shopify.com/s/files/1/2392/5893/products/TT-DAY-10875_1024x1024.jpg",
+   price: 4000,
+   category: wedding,
+   designer: "Anita Dongre"
+    )
+
+
+
+  item14 = Item.create(
+   name: "Straight Kurta In Georgette",
+   color: "red",
+   gender: "female",
+   size:["S", "M", "L", "XL"],
+   description: "Straight Kurta In Georgette With Multi-Coloured Floral Print Highlighted With Sequins. Paired With A Tulle Dupatta And Churidar.",
+   image:"https://cdn.shopify.com/s/files/1/2392/5893/products/TT-DAY-11082_400x.jpg",
+   price: 2000,
+   category: wedding,
+   designer: "Anita Dongre"
+    )
+
+
+  item16 = Item.create(
+   name: "Mix N Match Top",
+   color: "pink",
+   gender: "female",
+   size:["S", "M", "L", "XL"],
+   description: "Floaty and cropped, Free People's Mix N Match top does everything for your figure with wide sleeves and boho spirit.",
+   image:"https://slimages.macysassets.com/is/image/MCY/products/0/optimized/15819630_fpx.tif?op_sharpen=1&wid=402&hei=489&fit=fit,1&$filtersm$&fmt=webp",
+   price: 30,
+   category: top,
+   designer: "Free People"
+    )
+
+
+  item16 = Item.create(
+   name: "TEXTURED WEAVE SHIRT",
+   color: "black",
+   gender: "female",
+   size:["S", "M", "L", "XL"],
+   description: "Utilitarian details -- like epaulets, zip pockets and roll-tab sleeves -- add a cool vibe to Calvin Klein's essential blouse, a workweek go-to for seasons to come.",
+   image:"https://slimages.macysassets.com/is/image/MCY/products/1/optimized/9213461_fpx.tif?op_sharpen=1&wid=402&hei=489&fit=fit,1&$filtersm$&fmt=webp",
+   price: 20,
+   category: top,
+   designer: "Calvin Klein"
+    )
 
 cartItem1 = CartItem.create(cart: cart1, item: item1)
 review1 = Review.create(item: item1, user: saima, comment: "love this dress", rating: 3)
