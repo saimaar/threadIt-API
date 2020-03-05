@@ -22,6 +22,10 @@ cart2 = Cart.create(user: annie)
 
 tunic = Category.create(name: "tunic")
 dress = Category.create(name: "dress")
+jumpsuit = Category.create(name: "jumpsuit")
+bottom = Category.create(name: "bottom")
+top = Category.create(name: "top")
+
 
 item1 = Item.create(
   name: "KAELI DRESS",
@@ -30,7 +34,7 @@ item1 = Item.create(
   size:["S", "M", "L", "XL"],
   description: "A sunny yellow dress, adorned with embroidered accents onto exquisite fabric. The Kaeli Dress with it’s v-neckline and three quarter bell sleeves is perfect for summer.",
   image:"https://us.anitadongre.com/media/catalog/product/cache/9068914f3af5c89421a71a6fdd0cb779/f/w/fw19mb055cf-yellow_1_.jpg",
-  price: 123,
+  price: 145,
   category: tunic,
   designer: "Anita Dongre"
    )
@@ -47,9 +51,9 @@ item2 = Item.create(
  designer: "Anita Dongre"
   )
 
-item1 = Item.create(
+item3 = Item.create(
   name: "ZOYA DRESS",
-  color: "Ivory",
+  color: "Grey",
   gender: "female",
   size:["S", "M", "L", "XL"],
   description: "The Zoya Dress is an understated stone hued dress with tassel detailing at the rounded neckline",
@@ -59,17 +63,95 @@ item1 = Item.create(
   designer: "Anita Dongre"
  )
 
-item2 = Item.create(
+item4 = Item.create(
   name: "NORA DRESS",
-  color: "Indigo",
+  color: "Blue",
   gender: "female",
   size:["S", "M", "L", "XL"],
   description: "The silken Nora Dress is adorned with motifs inspired by the majestic architecture of Rajasthan’s palaces",
   image:"https://us.anitadongre.com/media/catalog/product/cache/9068914f3af5c89421a71a6fdd0cb779/f/w/fw19pds113_indigo.jpg?v=4",
-  price: 100,
+  price: 150,
   category: dress,
   designer: "Anita Dongre"
 )
+
+
+item5 = Item.create(
+  name: "Aylin Dress",
+  color: "pink",
+  gender: "female",
+  size:["S", "M", "L", "XL"],
+  description: "Elaborately embroidered in summery hues and motifs on delicate cotton silk. The Aylin Tunic features a round keyhole neckline with tasselled tie up details, full sleeves and a gathered hemline.
+Style Tip: Style this tunic as a dress or pair it with a churidar for a light summer look.
+Fabric Content: Outer: 74% Cotton 26% Silk Inner: 100% Cotton",
+  image:"https://us.anitadongre.com/media/catalog/product/cache/8de74e620574e722f01d119e92a06058/s/s/ss19mb080-onion-pink-_1_.jpg",
+  price: 100,
+  category: tunic,
+  designer: "Anita Dongre"
+)
+
+
+# -------------------------------jumpsuits-------------------------------------------------------------
+item6 = Item.create(
+  name: "Naila",
+  color: "blue",
+  gender: "female",
+  size:["S", "M", "L", "XL"],
+  description: "Hand embroidered with traditional floral motifs, this aqua fitted tunic features sheer full sleeves, a tie-up neck and side slits. This beautiful fitted dress was embroidered by the women of SEWA Trade Facilitation Centre.",
+  image:"https://us.anitadongre.com/media/catalog/product/cache/8de74e620574e722f01d119e92a06058/s/s/ss18rt095_aqua_3__1.jpg?",
+  price: 300,
+  category: top,
+  designer: "Global Desi"
+   )
+
+item7 = Item.create(
+ name: "Orange Jumpsuit",
+ color: "orange",
+ gender: "female",
+ size:["S", "M", "L", "XL"],
+ description: "Cute Jumpsuit perfect for a date night!",
+ image:"https://www.globaldesi.in/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/f/f/ff20gh005jsmo_rust_2_.jpg",
+ price: 200,
+ category: jumpsuit,
+ designer: "Global Desi"
+  )
+
+item8 = Item.create(
+  name: "Wine Jumpsuit",
+  color: "red",
+  gender: "female",
+  size:["S", "M", "L", "XL"],
+  description: "The Zoya Dress is an understated stone hued dress with tassel detailing at the rounded neckline",
+  image: "https://www.globaldesi.in/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/f/f/ff20gh001ajsrl_wine_1_.jpg",
+  price: 50,
+  category: jumpsuit,
+  designer: "Global Desi"
+ )
+
+item9 = Item.create(
+  name: "Coral Printed Jumpsuit",
+  color: "pink",
+  gender: "female",
+  size:["S", "M", "L", "XL"],
+  description: "The silken Nora Dress is adorned with motifs inspired by the majestic architecture of Rajasthan’s palaces",
+  image:"https://www.globaldesi.in/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/f/f/ff20gh001jsrys_coral_1_.jpg",
+  price: 100,
+  category: jumpsuit,
+  designer: "Global Desi"
+)
+
+item7 = Item.create(
+  name: "Blue Gharara Jumpsuit",
+  color: "blue",
+  gender: "female",
+  size:["S", "M", "L", "XL"],
+  description: "blue summery feels",
+  image:"https://www.globaldesi.in/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/s/s/ss20gh027jsry_ss20gccfw19blue.jpg",
+  price: 300,
+  category: jumpsuit,
+  designer: "Global Desi"
+   )
+
 
 cartItem1 = CartItem.create(cart: cart1, item: item1)
 review1 = Review.create(item: item1, user: saima, comment: "love this dress", rating: 3)
