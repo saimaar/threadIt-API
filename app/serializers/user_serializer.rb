@@ -1,18 +1,18 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :username, :email, :cart_items
+  attributes :id, :username, :email
   has_one :cart
   has_many :orders
   has_many :reviews
 
   ##instead of line 4 and 5 we could just add orders and reviews as an attribute
-  ##on line 2 
+  ##on line 2
 
-  def cart_items
-    # byebug
-      self.object.cart.cart_items.map do |cart_item|
-        cart_item.item.to_h.merge({:cart_item_id => cart_item.id})
-    end
-  end
+  # def cart_items
+  #   # byebug
+  #     self.object.cart.cart_items.map do |cart_item|
+  #       cart_item
+  #   end
+  # end
 
   # def order_items
   #   self.object.orders.map do |order|

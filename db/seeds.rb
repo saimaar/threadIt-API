@@ -246,5 +246,26 @@ item12 = Item.create(
    designer: "Calvin Klein"
     )
 
+
+item17 = Item.create(
+ name: "Jane Culottes",
+ color: "grey",
+ gender: "female",
+ size:["S", "M", "L", "XL"],
+ description: "Made using earth-friendly processes, linen is as good for the earth as it is for you. It is made from the stem of the flax plant, which is then woven into the hypo-allergenic, breathable fabric that we all love.
+
+Lightweight, regular fit, ankle length with pockets on either side.
+
+Meet the Artisan to know more
+
+Artisanal product: slight imperfections and some colour variation may occur, a feature distinct to handcrafts, making your garment unique to you.",
+ image:"https://us.anitadongre.com/media/catalog/product/cache/8de74e620574e722f01d119e92a06058/s/s/ss18vb202_natural_1_.jpg?v=5",
+ price: 20,
+ category: bottom,
+ designer: "Anita Dongre"
+  )
+
+
+
 cartItem1 = CartItem.create(cart: cart1, item: item1)
 review1 = Review.create(item: item1, user: saima, comment: "love this dress", rating: 3)
