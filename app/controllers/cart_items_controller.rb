@@ -8,13 +8,12 @@ class CartItemsController < ApplicationController
   end
 
   def create
-    same_items_in_cart = CartItem.find_by(cart_id: params["cart_id"], item_id: params["item_id"])
-    if same_items_in_cart.nil?
+    @cart_item = CartItem.find_by(cart_id: params["cart_id"], item_id: params["item_id"])
+    if @cart_item.nil?
       @cart_item = CartItem.create(cart_item_params)
     else
-      quantity = same_items_in_cart[:quantity] + params["quantity"]
-      same_items_in_cart.update(quantity: quantity)
-      @cart_item = CartItem.find_by(cart_id: params["cart_id"], item_id: params["item_id"])
+      quantity = @cart_item[:quantity] + params["quantity"]
+      @cart_item.update(quantity: quantity)
     end
 
     render json: @cart_item
@@ -28,6 +27,19 @@ end
     @cart_item = CartItem.find_by(cart_id: logged_user.cart.id, item_id: params[:id])
     @cart_item.destroy
     render json: {message: "there is no item in the cart", cart_item: @cart_item}
+  end
+
+  def deleteSingleItem
+
+    @cart_item = CartItem.find(params[:id])
+    quantity = @cart_item["quantity"] - 1
+    if quantity > 0
+      @cart_item.update(quantity: quantity)
+      render json: @cart_item
+    else
+      @cart_item.destroy
+      render json: {cart_item_deleted: true, message: "there is no item in the cart", cart_item: @cart_item}
+    end
   end
 
 private

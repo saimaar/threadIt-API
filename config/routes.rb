@@ -14,6 +14,7 @@ post '/charges', to: 'charges#create'
 post '/login', to: "users#login"
 get '/persist', to: "users#persist"
 get '/profile', to: "users#profile"
-delete '/cartitem/delete/:id', to: 'cart_items#destroy'
+delete '/cartitem/remove/:id', to: 'cart_items#destroy'
+delete '/cartitem/delete/:id', to: 'cart_items#deleteSingleItem'
 
 end
