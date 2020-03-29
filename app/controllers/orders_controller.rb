@@ -7,7 +7,6 @@ class OrdersController < ApplicationController
   end
 
   def create
-    # byebug
     # debugger
     ## Items
     user = User.find(params[:order][:user_id])
@@ -21,7 +20,7 @@ class OrdersController < ApplicationController
     ## Clear the cart
     # byebug
     user.cart.cart_items.destroy_all
-    render json: @order
+    render json: @order, include: ["user.cart.cart_items"]
 end
 
 
