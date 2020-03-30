@@ -24,11 +24,11 @@
 
 ## Code Guide 
 If you would like to take a closer look at the code behind the ThreadIt App, the best folders to look in are:
-- [index.js](src/index.js)
-- [React Components](src/Components)
-- [Redux Folder](src/Redux)
-- [App.js](src/App.js)
-- [Models Img](src/image-folder/Models.png) 
+- [JWT Auth](app/controllers/application_controller.rb)
+- [Users controller](app/controllers/users_controller.rb)
+- [Cart Items controller](app/controllers/cart_items_controller.rb)
+- [Serializers](https://github.com/saimaar/threadIt-API/tree/master/app/serializers)
+- [Models](https://github.com/saimaar/threadIt-API/tree/master/app/models) 
 
 ## Features
 - Authentication
