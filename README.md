@@ -4,7 +4,7 @@
 ## :arrow_forward: Checkout my demo [here](https://youtu.be/qzQDJL2lFHw).
   
    ## Tech Stack 
-**Frontend** 
+**[Frontend](https://github.com/saimaar/threadIt-Frontend/)** 
 - React.js
 - React Router - Declarative Routing
 - Redux [4.0.5]
@@ -12,7 +12,7 @@
 - Custom CSS3 styling
 - Stripe API
 
-**[Backend ~ API](https://github.com/saimaar/threadIt-API)**
+**Backend ~ API**
 - Ruby [2.6.1]
 - Rails [~> 5.2.3] - MVC web framework used as an API
 - Bcrypt [~> 3.1.7] - Gem for encryption and securing user passwords
