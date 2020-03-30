@@ -50,19 +50,19 @@ If you would like to take a closer look at the code behind the ThreadIt App, the
    - Users can delete their account
 ## Screenshots 
 ### Login/Register 
-![image](src/image-folder/img1.png)
+![image](image-folder/img1.png)
 ---
 ### All Items Page 
-![image](src/image-folder/img3.png)
+![image](image-folder/img3.png)
 ---
 ### Show Page 
-![image](src/image-folder/img7.png)
+![image](image-folder/img7.png)
 ---
 ### Cart Items
-![image](src/image-folder/img5.png)
+![image](image-folder/img5.png)
 ---
 ### Review/Ratings 
-![image](src/image-folder/img4.png)
+![image](image-folder/img4.png)
 
 ## Installing
 **Backend Installation:**
